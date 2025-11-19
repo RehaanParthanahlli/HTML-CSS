@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 Intro to CSS
-=======
-Intro to CSS
->>>>>>> d00bd4896c19d8aed7d347413e85db229275d2f8
