@@ -1,0 +1,159 @@
+I. Course Introduction and Setup -
+• Course Goal: Learning to build websites from a beginner to a professional level, culminating in building youtube.com.
+• Course Resources: Access to exercises (more than 100 in total) and an HTML and CSS reference.
+• Required Software:
+    ◦ Web browser (Google Chrome is recommended for web development).
+    ◦ Code editor (VS Code, or Visual Studio Code, is recommended).
+• Code Editor Configuration: Installing the Live Server VS Code extension for automatic page reloading, updating VS Code settings for indenting (changing tab size from four spaces to two).
+
+II. HTML Basics (Hypertext Markup Language) -
+• Definition and Purpose: HTML stands for Hypertext Markup Language and is the tool used to create websites. It involves giving instructions to a computer step-by-step.
+• Creating Files: Creating the first HTML file, ensuring the file name ends with .html.
+• Core Concepts:
+    ◦ HTML Element: A generic term describing anything displayable on the webpage (e.g., buttons, paragraphs).
+    ◦ HTML Tags: The code part that tells the computer what to create.
+        ▪ Opening tag (<tag>) and closing tag (</tag>).
+        ▪ Content (the text or other elements placed between the tags).
+    ◦ Void Elements: Elements that do not require a closing tag (e.g., link, img, input).
+• Syntax: The rules for how a coding language should be written.
+    ◦ Syntax Quirks: Extra spaces and new lines are essentially ignored by the browser.
+    ◦ Indenting code for readability.
+• HTML Elements and Tags Introduced:
+    ◦ Button (<button>).
+    ◦ Paragraph (<p>).
+    ◦ Link/Anchor element (<a>).
+    ◦ Input element (<input>) (used for creating search boxes/text boxes).
+    ◦ Image element (<img>) (used for loading images).
+    ◦ Strong element (<strong>).
+    ◦ U element (<u>).
+    ◦ Span element (<span>) (the most generic text element).
+    ◦ Div element (<div>): Stands for division, used as a container or a box.
+• Attributes: Syntax that modifies how an element behaves.
+    ◦ Attribute syntax (space, name, equal sign, value in quotes).
+    ◦ href (Hypertext Reference, determines link destination).
+    ◦ target (determines if a link opens in a new tab, value _blank).
+    ◦ class (allows labeling HTML elements for targeted CSS styling).
+    ◦ src (source, specifies image location).
+    ◦ type (specifies input type, e.g., text or checkbox).
+    ◦ placeholder (labeling input fields).
+• HTML Entities: Using special code to display characters like the middle dot or a check mark, especially symbols that might be confused with HTML tags (e.g., >).
+
+For Deepeer Dive in HTML Watch Bro Code HTML or Notes I have prepared from watching that video in Notebook.
+
+III. CSS Fundamentals (Cascading Style Sheets) -
+• Definition and Purpose: Used to style a webpage and change the appearance of HTML elements.
+• Setting up CSS:
+    ◦ Style Element (<style>): An element placed inside the <head> used to write CSS code directly in the HTML file.
+    ◦ Inline Styles: Writing CSS code directly inside the HTML opening tag using the style attribute (used for practice/demonstration).
+    ◦ External CSS Files: Moving CSS code into a separate file (e.g., buttons.css, header.css) for better organization.
+    ◦ Linking CSS: Using the <link> element inside the <head> to load external CSS files, including using file paths to link files in different folders.
+• Syntax:
+    ◦ Selector: The word at the front that tells the computer which elements to target.
+        ▪ Targeting by element name (e.g., button).
+        ▪ Targeting by class name (using a dot, e.g., .subscribe-button).
+    ◦ Declaration: Contained within squiggly brackets ({}).
+    ◦ Property: Tells the computer what is changing (left of the colon).
+    ◦ Value: Tells the computer what the property is changing to (right of the colon).
+    ◦ Styles end with a semicolon (;).
+    ◦ Targeting multiple elements (separating selectors with a comma).
+    ◦ Advanced CSS Selectors (e.g., targeting an element inside another, using a space: .container .inner-element).
+• Basic Properties and Values:
+    ◦ Color Measurement:
+        ▪ Color names (e.g., red, white).
+        ▪ RGB (Red, Green, Blue) values (e.g., rgb(200, 0, 0)).
+        ▪ Hexadecimal color codes (Hex).
+    ◦ background-color.
+    ◦ color (for text color).
+    ◦ border (removing borders using none).
+    ◦ border-color, border-style, border-width.
+    ◦ cursor (pointer for hand icon).
+
+IV. Intermediate CSS and Advanced Styling -
+• Sizing and Spacing (The Box Model): Determines how much space an element takes up.
+    ◦ Margin: Spacing on the outside of the element (e.g., margin-right).
+    ◦ Padding: Spacing on the inside of the element (preferred method over fixed height/width).
+    ◦ Border.
+    ◦ Shorthands: Using single properties like padding, margin, or border to set multiple values (top, right, bottom, left).
+• Text Styling:
+    ◦ font-family.
+    ◦ font-size.
+    ◦ font-weight (e.g., bold or numerical values like 500).
+    ◦ font-style (e.g., italic).
+    ◦ text-align (e.g., center).
+    ◦ line-height (spacing between lines).
+    ◦ text-decoration (e.g., underline).
+    ◦ Placeholder Styling (using the ::placeholder pseudo-class).
+    ◦ white-space: nowrap (to prevent text wrapping).
+• Interactivity and Effects:
+    ◦ Pseudo-classes: Adding extra styles in specific situations.
+        ▪ :hover (styles applied when the mouse is over the element).
+        ▪ :active (styles applied when the element is clicked).
+    ◦ Opacity: opacity property (how see-through an element is, values 0 to 1).
+    ◦ Transitions: The transition property (makes style changes smooth, requires defining the property and duration).
+    ◦ Shadows: The box-shadow property.
+        ▪ Values: horizontal position, vertical position, blur, and color.
+        ▪ RGBA Color: rgba (Red, Green, Blue, Alpha), where Alpha is opacity.
+        ▪ Inner Shadow: Using inset to place the shadow inside the element.
+• Images:
+    ◦ width/height (managing dimensions, height adjusts automatically when width is set).
+    ◦ object-fit (cover, contain) (determines how an image fits a defined area).
+    ◦ object-position (adjusting the visible area of a fitted image).
+• CSS Inheritance and Specificity:
+    ◦ Inheritance: Certain properties (mostly text-related) set on an outer element (like body) are passed down to inner elements.
+    ◦ Specificity: If the same style is set on an element multiple times, the style applied by the more specific selector (e.g., a class selector vs. an element selector) will take priority.
+
+V. Layout Techniques and Display Properties -
+• Display Property: Controls how an element is displayed, determining if it appears beside or above/below other elements.
+    ◦ Block Elements: Take up the entire line, forcing other elements below them (default for paragraphs, divs).
+    ◦ Inline Block Elements: Take up only as much space as needed, allowing elements to appear beside them (default for images, inputs).
+    ◦ Inline Elements: Appear within a line of text (e.g., span).
+• The Nested Layouts Technique: A fundamental strategy for breaking down complex website designs into a combination of horizontal and vertical layouts.
+• CSS Grid: A rigid system for creating two-dimensional layouts (rows and columns).
+    ◦ Grid Setup: display: grid (on the container).
+    ◦ Columns: grid-template-columns (defines column width/count).
+    ◦ Free Space Unit: fr (takes up remaining available space, e.g., 1fr).
+    ◦ Gaps: column-gap (space between columns) and row-gap (space between rows).
+• CSS Flexbox: A flexible system for creating one-dimensional layouts (rows or columns).
+    ◦ Flexbox Setup: display: flex (on the container).
+    ◦ Direction: flex-direction (row or column).
+    ◦ Free Space Unit: flex: 1 (equivalent to 1fr).
+    ◦ Horizontal Alignment: justify-content (center, start, end, space-between).
+    ◦ Vertical Alignment: align-items (center, start, end, stretch).
+    ◦ Flexibility Control: flex-shrink: 0 (prevents elements from shrinking when space is limited).
+• Vertical Alignment: Using the vertical-align: top property on inline-block elements to fix misalignment.
+
+VI. HTML Structure and Organization -
+• Proper HTML Structure: The necessary basic structure for every HTML file.
+    ◦ <!DOCTYPE html> (declares use of modern HTML version).
+    ◦ <html> (contains the entire webpage).
+    ◦ <head> (contains non-visible elements like styles and titles).
+    ◦ <body> (contains visible elements).
+    ◦ <title> (sets text in the browser tab).
+• Nesting: Placing elements inside other elements (e.g., <head> and <body> inside <html>).
+• File Paths: Locating files (images, CSS) relative to the HTML file (using folder names and /).
+• Loading Custom Fonts: Using Google Fonts to load and integrate external fonts (like Roboto) into the website structure via the <head> element.
+• Semantic Elements: Elements that function like divs but provide special meaning and structure to screen readers and search engines.
+    ◦ Examples: header, nav, main, section.
+
+VII. CSS Position (Fixed, Absolute, Relative) -
+• Position Property Overview: Used for specialized layout tasks like stacking elements or fixing elements to the viewport.
+• Coordinates: top, bottom, left, right (used to move positioned elements).
+    ◦ Stretching elements (by setting opposite coordinates, e.g., left: 0 and right: 0).
+    ◦ Using negative values to push elements beyond container edges.
+• position: static: The default position (element appears normally).
+• position: fixed: Element sticks to the browser window while scrolling (e.g., YouTube header or sidebar).
+    ◦ Does not take up space on the page.
+    ◦ Requires adding padding to the body element to prevent content overlap.
+• position: absolute: Element is positioned relative to the page (moves when scrolling).
+• position: relative: Element displays normally, but allows positioned absolute children to be placed relative to it instead of the page.
+• Z-Index: Determines which positioned element appears in front (z-index: 100 is higher priority than default 0).
+• Key Technique (Absolute inside Relative/Fixed): Used to attach elements to corners or specific points on a container (e.g., video timestamp, notification count).
+
+VIII. Final Project Completion and Review -
+• Creating the Sidebar: Using Flexbox with flex-direction: column to align icons and text vertically.
+• Tooltips: Creating tooltips that appear on hover using the Position Absolute/Relative technique combined with opacity: 0 (hidden by default) and a :hover pseudo-class (opacity set to 1).
+    ◦ pointer-events: none to prevent mouse hover conflicts on the tooltip itself.
+• Responsive Design: Adjusting layouts for different screen sizes.
+    ◦ Media Queries (@media): Applying specific CSS styles only when certain screen size conditions are met (e.g., max-width, min-width).
+• Comments: Using HTML (<!-- Comment -->) and CSS (/* Comment */) comments to document code.
+• Next Steps: Recommendation to learn JavaScript
