@@ -914,6 +914,7 @@
             border-bottom-width: 1px;
             border-bottom-style: solid;
             border-bottom-color: rgb(214, 209, 209);
+            z-index: 2;
         }
         .header-img{
             width:40px;
@@ -931,6 +932,7 @@
             top:55px;
             width: 55px;
             background-color: aliceblue;
+            text-align: center;
             border-right-width: 1px;
             border-right-style: solid;
             border-right-color: rgb(214, 209, 209);
@@ -972,6 +974,9 @@
             border:2px Solid Black;
             box-shadow: inset 1px 2px 5px rgb(0,0,0,0.15);
             width: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .Structure{
             display:grid;
@@ -984,6 +989,12 @@
         }
         .Picture{
             width:100%;
+            position: relative;
+        }
+        .time{
+            position: absolute;
+            bottom: 2px;
+            right: 2px;
         }
         .Picture-info{
             margin-top:10px;
@@ -1026,12 +1037,15 @@
         <div class="middle"><input type="text" placeholder="Search" class="search-bar"><img src="../../icons/mic.png" class="header-img" style="border:2px Solid black;height:38px;"></div>
         <div class="right"><img src="../../icons/bell.png" class="header-img-right"><img src="../../icons/Profile.jpg" class="header-img"></div>
     </div>
-    <div class="sidebar">Bar</div>
+    <div class="sidebar"><p>Bar use flex here - make direc col and finish up project</p></div>
     
     <div class="Structure">
         <div class="Picture-preview">
-            <div class="Picture">                                         <!--Elements top to bottom stacked on each other is an vertical laouts & elements side to side like that profile picture and pictre details are horizontal laouts-->
-                <img src="../../Cobie.jpeg" alt="Cobie" class="Picture">  <!--If img isn't assigned class same as picture there wont be changes seen that are supposed to be seen as picture belongs to div and changes div alone-->
+            <div class="Picture">                                      <!--Elements top to bottom stacked on each other is an vertical laouts & elements side to side like that profile picture and pictre details are horizontal laouts-->
+                <img src="../../Cobie.jpeg" alt="Cobie" class="Picture"> 
+                <div class="time">
+                    <button>14:20</button>
+                </div> <!--If img isn't assigned class same as picture there wont be changes seen that are supposed to be seen as picture belongs to div and changes div alone-->
             </div>
             <div class="Picture-info">
                 <div class="Profile-Picture">
@@ -1047,6 +1061,9 @@
         <div class="Picture-preview">
             <div class="Picture">
                 <img src="../../Cobie.jpeg" alt="Cobie" class="Picture"> 
+                <div class="time">
+                    <button>14:20</button>
+                </div>
             </div>
             <div class="Picture-info">
                 <div class="Profile-Picture">
@@ -1062,6 +1079,9 @@
         <div class="Picture-preview">
             <div class="Picture">
                 <img src="../../Cobie.jpeg" alt="Cobie" class="Picture"> 
+                <div class="time">
+                    <button>14:20</button>
+                </div>
             </div>
             <div class="Picture-info">
                 <div class="Profile-Picture">
@@ -1077,6 +1097,9 @@
         <div class="Picture-preview">
             <div class="Picture">
                 <img src="../../Cobie.jpeg" alt="Cobie" class="Picture"> 
+                <div class="time">
+                    <button>14:20</button>
+                </div>
             </div>
             <div class="Picture-info">
                 <div class="Profile-Picture">
@@ -1092,6 +1115,9 @@
         <div class="Picture-preview">
             <div class="Picture">
                 <img src="../../Cobie.jpeg" alt="Cobie" class="Picture"> 
+                <div class="time">
+                    <button>14:20</button>
+                </div>
             </div>
             <div class="Picture-info">
                 <div class="Profile-Picture">
@@ -1107,6 +1133,9 @@
         <div class="Picture-preview">
             <div class="Picture">
                 <img src="../../Cobie.jpeg" alt="Cobie" class="Picture"> 
+                <div class="time">
+                    <button>14:20</button>
+                </div>
             </div>
             <div class="Picture-info">
                 <div class="Profile-Picture">
