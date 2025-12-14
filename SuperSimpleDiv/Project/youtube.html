@@ -901,6 +901,11 @@
     <!--If wana link multiple css files use link tag multiple time separate each time-->
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lilex:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <style>
+        body {
+            font-family:IBM Plex Mono;  /*Importing google fonts wont change anthng but declaring it in css will chngge its like saving file but not opening*/
+            font-size:12px;
+            padding: 55px;
+        }
         .header{
             display:flex;
             justify-content: space-between;
@@ -915,27 +920,6 @@
             border-bottom-style: solid;
             border-bottom-color: rgb(214, 209, 209);
             z-index: 2;
-        }
-        .header-img{
-            width:40px;
-            height:40px;
-        }
-        .header-img-right{
-            width:40px;
-            height:40px;
-            margin-right: 20px;
-        }
-        .sidebar{
-            position: fixed;
-            left:0;
-            bottom:0;
-            top:55px;
-            width: 55px;
-            background-color: aliceblue;
-            text-align: center;
-            border-right-width: 1px;
-            border-right-style: solid;
-            border-right-color: rgb(214, 209, 209);
         }
         .left{
             margin-left: 20px;
@@ -953,10 +937,14 @@
             justify-content: end;
             margin-right:20px;
         }
-        body {
-            font-family:IBM Plex Mono;  /*Importing google fonts wont change anthng but declaring it in css will chngge its like saving file but not opening*/
-            font-size:12px;
-            padding: 55px;
+        .header-img{
+            width:40px;
+            height:40px;
+        }
+        .header-img-right{
+            width:40px;
+            height:40px;
+            margin-right: 20px;
         }
         .search-bar::placeholder{    /*Psuedo Class*/
             font-family: IBM Plex Mono;
@@ -985,7 +973,7 @@
             row-gap: 20px;
         }
         .Picture-preview{
-            width:100%;
+            width:100%;    /*100% means this uses entire width of div*/
         }
         .Picture{
             width:100%;
@@ -995,6 +983,18 @@
             position: absolute;
             bottom: 2px;
             right: 2px;
+        }
+        .sidebar{
+            position: fixed;
+            left:0;
+            bottom:0;
+            top:55px;
+            width: 55px;
+            background-color: aliceblue;
+            text-align: center;
+            border-right-width: 1px;
+            border-right-style: solid;
+            border-right-color: rgb(214, 209, 209);
         }
         .Picture-info{
             margin-top:10px;

@@ -1,0 +1,2 @@
+Learn more about CSS Prop. and values also how to center a div using inline or block or Grid or Flex.
+Also about diff b/q width auto 0 100%
