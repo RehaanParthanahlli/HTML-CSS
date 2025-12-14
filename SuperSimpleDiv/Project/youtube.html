@@ -1,6 +1,7 @@
 <!--Teaches about inline inline-block and block | Nested Divs-->
 <!--Nested Divs if it is good then Flexbox & grid will be simple-->
 <!--Images & Google Fonts-->
+<!--To know more about what have been thought go through ./info.txt file
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lilex:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family:IBM Plex Mono;
+            font-family:IBM Plex Mono;  /*Importing google fonts wont change anthng but declaring it in css will chngge its like saving file but not opening*/
             font-size:12px;
         }
         .search-bar{
@@ -24,27 +25,121 @@
         }
         .Picture-preview{
             display:inline-block;
+            width:400px;
         }
         .Picture{
             display:block;
             width:400px;
         }
         .Picture-info{
-            padding-top:4px;
-            display:inline-block;  /* In Inline-Block width can be changed where as in inline it can't be also block width can be changed
+            padding-top:4px; /* Even if inline-Block changed to inline or block no chnages as the entire wrapper pictre-prev is inline-block*/
+            display:block;  /* In Inline-Block width can be changed where as in inline it can't be also block width can be changed
             but block starts from new line*/
         }
-        .Profile-Picture{
-            display:inline-block;
-            width:100px;
-        }
+        .Profile-Picture,
         .Picture-Profile{
             display:inline-block;
-            width:100px;        
+            width:100px;   
+            background-color:gray;        As u can see there is some spacing in b/w 
+        }                                 
+        .Photo-Details{                                     &
+            display:inline-block;
+            width:300px;                 If its 290px it work but when its 300px it won't work as for the space creating alngmnt promblm
+            vertical-align:top;          But if wanna overcome dont set picture-preview width to 400px instead set to auto
+            margin-top:10px;
+            background-color:gray;      Also how can this happen see the div structure answer lies there ie go to it
+        }
+        .About,
+        .height-info,
+        .born-info{
+            line-height:15px;
+            display:inline-block;
+            width:300px;
+            text-align:center;
+            margin-top:2px;
+            margin-bottom:2px;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Search" class="search-bar">
+    <div class="Picture-preview">
+        <div class="Picture">Elements top to bottom stacked on each other is an vertical laouts & elements side to side like that profile picture and pictre details are horizontal laouts
+            <img src="../../Cobie.jpeg" alt="Cobie" class="Picture">  If img isn't assigned class same as picture there wont be changes seen that are supposed to be seen as picture belongs to div and changes div alone
+        </div>
+        <div class="Picture-info">
+            <div class="Profile-Picture">
+                <img src="../../Profile-Cob.jpeg" alt="Profile" class="Picture-Profile">
+            </div>                                                                If it was <div></div><div></div> without - this removes space
+                                                                                    <div></div>
+            <div class="Photo-Details">                                             <div></div> this causes space 
+                <p class="About">Cobie Smulders is a Canadian-American actress best known for playing Robin Scherbatsky in How I Met Your Mother and Maria Hill in the Marvel Cinematic Universe</p>
+                <p class="height-info">Height: 5'8″ (1.73 m)</p>
+                <p class="born-info">Born - April 3 1982 Vancouver Canada</p>
+            </div>
+        </div>
+    </div>
+    <div class="Picture-preview">
+        <div class="Picture">
+            <img src="../../Cobie.jpeg" alt="Cobie" class="Picture"> 
+        </div>
+        <div class="Picture-info">
+            <div class="Profile-Picture">
+                <img src="../../Profile-Cob.jpeg" alt="Profile" class="Picture-Profile">
+            </div>
+            <div class="Photo-Details">
+                <p class="About">Cobie Smulders is a Canadian-American actress best known for playing Robin Scherbatsky in How I Met Your Mother and Maria Hill in the Marvel Cinematic Universe</p>
+                <p class="height-info">Height: 5'8″ (1.73 m)</p>
+                <p class="born-info">Born - April 3 1982 Vancouver Canada</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>-->
+<!--Inline has some problems that are algnmnt prob explained above-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lilex:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family:IBM Plex Mono;  /*Importing google fonts wont change anthng but declaring it in css will chngge its like saving file but not opening*/
+            font-size:12px;
+        }
+        .search-bar{
+            display:block;
+            margin-bottom:5px;
+            padding:4px;
+            border:2px Solid Black;
+            border-radius:9999px;
+        }
+        .Picture-preview{
+            display:inline-block;
+            width:400px;
+        }
+        .Picture{
+            display:block;
+            width:400px;
+        }
+        .Picture-info{
+            padding-top:4px; /* Even if inline-Block changed to inline or block no chnages as the entire wrapper pictre-prev is inline-block*/
+            display:block;  /* In Inline-Block width can be changed where as in inline it can't be also block width can be changed
+            but block starts from new line*/
+        }
+        .Profile-Picture,
+        .Picture-Profile{
+            display:inline-block;
+            width:100px;   
         }
         .Photo-Details{
             display:inline-block;
-            width:300px;
+            width:290px;
             vertical-align:top;
             margin-top:10px;
         }
@@ -64,8 +159,23 @@
 <body>
     <input type="text" placeholder="Search" class="search-bar">
     <div class="Picture-preview">
-        <div class="Picture">
+        <div class="Picture"> <!--Elements top to bottom stacked on each other is an vertical laouts & elements side to side like that profile picture and pictre details are horizontal laouts-->
             <img src="../../Cobie.jpeg" alt="Cobie" class="Picture">  <!--If img isn't assigned class same as picture there wont be changes seen that are supposed to be seen as picture belongs to div and changes div alone-->
+        </div>
+        <div class="Picture-info">
+            <div class="Profile-Picture">
+                <img src="../../Profile-Cob.jpeg" alt="Profile" class="Picture-Profile">
+            </div>
+            <div class="Photo-Details">
+                <p class="About">Cobie Smulders is a Canadian-American actress best known for playing Robin Scherbatsky in How I Met Your Mother and Maria Hill in the Marvel Cinematic Universe</p>
+                <p class="height-info">Height: 5'8″ (1.73 m)</p>
+                <p class="born-info">Born - April 3 1982 Vancouver Canada</p>
+            </div>
+        </div>
+    </div>
+    <div class="Picture-preview">
+        <div class="Picture">
+            <img src="../../Cobie.jpeg" alt="Cobie" class="Picture"> 
         </div>
         <div class="Picture-info">
             <div class="Profile-Picture">

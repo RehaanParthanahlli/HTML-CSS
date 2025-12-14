@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .Col2,
+        .Col1{
+            margin-right:2px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>    
+    <div style="
+        display:grid;
+        grid-template-columns: 100px 100px; 
+        ">
+        <p class="Col1">This shows us that grid doesn't require a div</p>
+        <p class="Col2">Just use p class n CSS Also CSS in Case Sensi</p>
+    </div>
+    <!--The thing is div is block but inside grid it takes up the colum size thats it & theres no spcae in b/w like that in previus case-->
+    <div style="
+        display:grid;
+        grid-template-columns: 100px 100px; 
+        ">
+        <div style="background-color: rgb(82, 82, 176);padding:6px;text-align: center;">
+            <p>The div will take size of col and still whatever u place inside might be block but it takes just col size</p>
+        </div>  
+        <div style="background-color: rgb(156, 123, 123);padding:6px;">
+            <p>Another example</p>
+            <p>That when div size is col size vertical length start to increase</p>
+        </div>
+    </div>
+    <div style="
+        margin-top:3px;
+        display:grid;
+        grid-template-columns: 100px 100px 200px; 
+        ">
+        <div style="background-color: rgb(82, 82, 176);padding:6px;text-align: center;">
+            <p>The div will take size of col and still whatever u place inside might be block but it takes just col size</p>
+        </div>  
+        <div style="background-color: rgb(156, 123, 123);padding:6px;">
+            <p>Another example</p>
+            <p>That when div size is col size vertical length start to increase</p>
+        </div>
+        <div style="background-color: rgb(156, 123, 123);padding:6px;">
+            <p>Another example</p>
+            <p>That shows diff b/w sizes of col & </p>
+        </div>
+        <div style="background-color: rgb(82, 82, 176);padding:6px;text-align: center;">
+            <p>If I add more than 3 divs for a grid then it strts creating rows</p>
+        </div>  
+    </div>
+    <div style="
+        display:grid;
+        grid-template-columns: 100px 1fr; 
+        ">
+        <div style="background-color: rgb(82, 82, 176);padding:6px;text-align: center;">
+            <p>Its about a special prop of grid-template-columns</p>
+        </div>  
+        <div style="background-color: rgb(156, 123, 123);padding:6px;">
+            <p>Another example</p>
+            <p>That is 1fr takes up entire space let over</p>
+        </div>
+    </div>
+    <div style="
+    display:grid;
+    grid-template-columns: 100px 1fr 1fr; 
+    margin-top:4px;
+    ">
+        <div style="background-color: rgb(82, 82, 176);padding:6px;text-align: center;">
+            <p>Its about a special prop of grid-template-columns</p>
+        </div>  
+        <div style="background-color: rgb(156, 123, 123);padding:6px;">
+            <p>Another example</p>
+            <p>That is 1fr takes up entire space let over</p>
+        </div>
+        <div style="background-color: rgb(123, 143, 156);padding:6px;">
+            <p>Another example</p>
+            <p>That is 2 horizntl frs take equal space</p>
+        </div>
+    </div>
+    <div style="
+    display:grid;
+    grid-template-columns: 100px 1fr 2fr; 
+    margin-top:4px;
+    ">
+        <div style="background-color: rgb(82, 82, 176);padding:6px;text-align: center;">
+            <p>Its about a special prop of grid-template-columns</p>
+        </div>  
+        <div style="background-color: rgb(156, 123, 123);padding:6px;">
+            <p>Another example</p>
+            <p>That is 2 unequal horizntl frs take unequal space</p>
+        </div>
+        <div style="background-color: rgb(123, 143, 156);padding:6px;">
+            <p>Another example</p>
+            <p>That is 1fr & 2fr takes 1:2 ratio space</p>
+        </div>
+    </div>
+</body>
+</html>
+<!--Grid is like a matrix 2x3 or nxm-->

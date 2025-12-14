@@ -1,3 +1,9 @@
+First watch brocode's Oneshot HTML Video then SupersimpleDivs CSS and HTML Video.
+
+For more info read from the pdf html-css-reference.pdf
+
+Later go through scrimba scrims.
+
 I. Course Introduction and Setup -
 • Course Goal: Learning to build websites from a beginner to a professional level, culminating in building youtube.com.
 • Course Resources: Access to exercises (more than 100 in total) and an HTML and CSS reference.
@@ -157,3 +163,4 @@ VIII. Final Project Completion and Review -
     ◦ Media Queries (@media): Applying specific CSS styles only when certain screen size conditions are met (e.g., max-width, min-width).
 • Comments: Using HTML (<!-- Comment -->) and CSS (/* Comment */) comments to document code.
 • Next Steps: Recommendation to learn JavaScript
+
