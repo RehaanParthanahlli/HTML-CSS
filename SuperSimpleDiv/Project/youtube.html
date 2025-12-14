@@ -657,6 +657,7 @@
         </div>
     </div>
 </body>-->
+<!--CSS Position
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -665,7 +666,7 @@
     <title>CSS Basics Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--If wana link multiple css files use link tag multiple time separate each time-->
+    If wana link multiple css files use link tag multiple time separate each time
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lilex:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <style>
         .header{
@@ -673,6 +674,14 @@
             justify-content: space-between;
             height:55px;
             align-items: center;
+            position: fixed;
+            top:0;
+            left:0;
+            right:0;
+            background-color: aliceblue;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: rgb(214, 209, 209);
         }
         .header-img{
             width:40px;
@@ -682,6 +691,17 @@
             width:40px;
             height:40px;
             margin-right: 20px;
+        }
+        .sidebar{
+            position: fixed;
+            left:0;
+            bottom:0;
+            top:55px;
+            width: 55px;
+            background-color: aliceblue;
+            border-right-width: 1px;
+            border-right-style: solid;
+            border-right-color: rgb(214, 209, 209);
         }
         .left{
             margin-left: 20px;
@@ -702,6 +722,7 @@
         body {
             font-family:IBM Plex Mono;  /*Importing google fonts wont change anthng but declaring it in css will chngge its like saving file but not opening*/
             font-size:12px;
+            padding: 55px;
         }
         .search-bar::placeholder{    /*Psuedo Class*/
             font-family: IBM Plex Mono;
@@ -773,6 +794,239 @@
         <div class="middle"><input type="text" placeholder="Search" class="search-bar"><img src="../../icons/mic.png" class="header-img" style="border:2px Solid black;height:38px;"></div>
         <div class="right"><img src="../../icons/bell.png" class="header-img-right"><img src="../../icons/Profile.jpg" class="header-img"></div>
     </div>
+    <div class="sidebar">Bar</div>
+    
+    <div class="Structure">
+        <div class="Picture-preview">
+            <div class="Picture">                                         Elements top to bottom stacked on each other is an vertical laouts & elements side to side like that profile picture and pictre details are horizontal laouts
+                <img src="../../Cobie.jpeg" alt="Cobie" class="Picture">  If img isn't assigned class same as picture there wont be changes seen that are supposed to be seen as picture belongs to div and changes div alone
+            </div>
+            <div class="Picture-info">
+                <div class="Profile-Picture">
+                    <img src="../../Profile-Cob.jpeg" alt="Profile" class="Picture-Profile">
+                </div>
+                <div class="Photo-Details">
+                    <p class="About">Cobie Smulders is a Canadian-American actress best known for playing Robin Scherbatsky in How I Met Your Mother and Maria Hill in the Marvel Cinematic Universe</p>
+                    <p class="height-info">Height: 5'8″ (1.73 m)</p>
+                    <p class="born-info">Born - April 3 1982 Vancouver Canada</p>
+                </div>
+            </div>
+        </div>
+        <div class="Picture-preview">
+            <div class="Picture">
+                <img src="../../Cobie.jpeg" alt="Cobie" class="Picture"> 
+            </div>
+            <div class="Picture-info">
+                <div class="Profile-Picture">
+                    <img src="../../Profile-Cob.jpeg" alt="Profile" class="Picture-Profile">
+                </div>
+                <div class="Photo-Details">
+                    <p class="About">Cobie Smulders is a Canadian-American actress best known for playing Robin Scherbatsky in How I Met Your Mother and Maria Hill in the Marvel Cinematic Universe</p>
+                    <p class="height-info">Height: 5'8″ (1.73 m)</p>
+                    <p class="born-info">Born - April 3 1982 Vancouver Canada</p>
+                </div>
+            </div>
+        </div>
+        <div class="Picture-preview">
+            <div class="Picture">
+                <img src="../../Cobie.jpeg" alt="Cobie" class="Picture"> 
+            </div>
+            <div class="Picture-info">
+                <div class="Profile-Picture">
+                    <img src="../../Profile-Cob.jpeg" alt="Profile" class="Picture-Profile">
+                </div>
+                <div class="Photo-Details">
+                    <p class="About">Cobie Smulders is a Canadian-American actress best known for playing Robin Scherbatsky in How I Met Your Mother and Maria Hill in the Marvel Cinematic Universe</p>
+                    <p class="height-info">Height: 5'8″ (1.73 m)</p>
+                    <p class="born-info">Born - April 3 1982 Vancouver Canada</p>
+                </div>
+            </div>
+        </div>
+        <div class="Picture-preview">
+            <div class="Picture">
+                <img src="../../Cobie.jpeg" alt="Cobie" class="Picture"> 
+            </div>
+            <div class="Picture-info">
+                <div class="Profile-Picture">
+                    <img src="../../Profile-Cob.jpeg" alt="Profile" class="Picture-Profile">
+                </div>
+                <div class="Photo-Details">
+                    <p class="About">Cobie Smulders is a Canadian-American actress best known for playing Robin Scherbatsky in How I Met Your Mother and Maria Hill in the Marvel Cinematic Universe</p>
+                    <p class="height-info">Height: 5'8″ (1.73 m)</p>
+                    <p class="born-info">Born - April 3 1982 Vancouver Canada</p>
+                </div>
+            </div>
+        </div>
+        <div class="Picture-preview">
+            <div class="Picture">
+                <img src="../../Cobie.jpeg" alt="Cobie" class="Picture"> 
+            </div>
+            <div class="Picture-info">
+                <div class="Profile-Picture">
+                    <img src="../../Profile-Cob.jpeg" alt="Profile" class="Picture-Profile">
+                </div>
+                <div class="Photo-Details">
+                    <p class="About">Cobie Smulders is a Canadian-American actress best known for playing Robin Scherbatsky in How I Met Your Mother and Maria Hill in the Marvel Cinematic Universe</p>
+                    <p class="height-info">Height: 5'8″ (1.73 m)</p>
+                    <p class="born-info">Born - April 3 1982 Vancouver Canada</p>
+                </div>
+            </div>
+        </div>
+        <div class="Picture-preview">
+            <div class="Picture">
+                <img src="../../Cobie.jpeg" alt="Cobie" class="Picture"> 
+            </div>
+            <div class="Picture-info">
+                <div class="Profile-Picture">
+                    <img src="../../Profile-Cob.jpeg" alt="Profile" class="Picture-Profile">
+                </div>
+                <div class="Photo-Details">
+                    <p class="About">Cobie Smulders is a Canadian-American actress best known for playing Robin Scherbatsky in How I Met Your Mother and Maria Hill in the Marvel Cinematic Universe</p>
+                    <p class="height-info">Height: 5'8″ (1.73 m)</p>
+                    <p class="born-info">Born - April 3 1982 Vancouver Canada</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>-->
+<!--CSS Relative-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--If wana link multiple css files use link tag multiple time separate each time-->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lilex:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        .header{
+            display:flex;
+            justify-content: space-between;
+            height:55px;
+            align-items: center;
+            position: fixed;
+            top:0;
+            left:0;
+            right:0;
+            background-color: aliceblue;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: rgb(214, 209, 209);
+        }
+        .header-img{
+            width:40px;
+            height:40px;
+        }
+        .header-img-right{
+            width:40px;
+            height:40px;
+            margin-right: 20px;
+        }
+        .sidebar{
+            position: fixed;
+            left:0;
+            bottom:0;
+            top:55px;
+            width: 55px;
+            background-color: aliceblue;
+            border-right-width: 1px;
+            border-right-style: solid;
+            border-right-color: rgb(214, 209, 209);
+        }
+        .left{
+            margin-left: 20px;
+            flex:0.5;
+            display:flex;
+        }
+        .middle {
+            flex: 1;
+            display: flex;
+            max-width: 500px; 
+        } 
+        .right{
+            flex:0.5;           /* Can use width:200px and flex-shrink:0; */
+            display: flex;      /* flex direction is row default */
+            justify-content: end;
+            margin-right:20px;
+        }
+        body {
+            font-family:IBM Plex Mono;  /*Importing google fonts wont change anthng but declaring it in css will chngge its like saving file but not opening*/
+            font-size:12px;
+            padding: 55px;
+        }
+        .search-bar::placeholder{    /*Psuedo Class*/
+            font-family: IBM Plex Mono;
+            padding:20px;
+            font-size: 18px;
+        }
+        .search-bar{
+            flex:1;                                 /* Make flex 1 then Width 0 to make flexible*/
+            font-family: IBM Plex Mono;
+            padding:20px;
+            font-size: 18px;
+            margin-bottom:5px;
+            padding:4px;
+            height:30px;
+            border:2px Solid Black;
+            box-shadow: inset 1px 2px 5px rgb(0,0,0,0.15);
+            width: 0;
+        }
+        .Structure{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 10px;
+            row-gap: 20px;
+        }
+        .Picture-preview{
+            width:100%;
+        }
+        .Picture{
+            width:100%;
+        }
+        .Picture-info{
+            margin-top:10px;
+            padding-top:4px; /* Even if inline-Block changed to inline or block no chnages as the entire wrapper pictre-prev is inline-block*/
+            display:grid; 
+            grid-template-columns: 1fr 2fr;/* In Inline-Block width can be changed where as in inline it can't be also block width can be changed
+            but block starts from new line*/
+        }
+        .Profile-Picture{
+            background-color: aquamarine;
+        }
+        .Picture-Profile{
+            padding:5px;
+            width:100px;  /* diff b/q auto and 100% that is in % it takes up the 100 % of div*/
+            height:100px;
+        }
+        .Photo-Details{
+            background-color: aquamarine;
+            display:grid;
+            grid-column: 1fr;
+        }
+        .About,
+        .height-info,
+        .born-info{
+            line-height:15px;
+            text-align:center;
+            margin-top:2px;
+            margin-bottom:2px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+            <img src="../../icons/dots.png" class="header-img">
+            <img src="../../icons/icon.png" class="header-img">
+            <p>Metube</p>
+        </div>
+        <div class="middle"><input type="text" placeholder="Search" class="search-bar"><img src="../../icons/mic.png" class="header-img" style="border:2px Solid black;height:38px;"></div>
+        <div class="right"><img src="../../icons/bell.png" class="header-img-right"><img src="../../icons/Profile.jpg" class="header-img"></div>
+    </div>
+    <div class="sidebar">Bar</div>
     
     <div class="Structure">
         <div class="Picture-preview">

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Practice</title>
+</head>
+<body style="height: 3000px;
+            padding: 30px;
+            padding-left: 90px;">   <!--Padding wont effect he fixed position-->  <!--if top left right set to zero the header takes entire line-->
+    <div style="position: fixed;
+                background-color: black;  
+                color:azure;
+                top:0px;
+                left:0px;
+                right:0px;
+                height:20px;
+                text-align: center;
+                z-index: 1;">
+                Header              <!--Can use bottom also When change the size of browser no chnges seen use top bottom left & right but if not needed can use height-->
+    </div><!--Genrl Default of z index is 0 but if 1 then header will come infront but if the z index of absolute is higher than that of header than that will be infront-->
+    <div style="background-color: rgb(79, 71, 71);
+    width: auto;   
+    color:azure;
+    height: auto;
+    position:absolute;
+    left: 80px;
+    top:0;
+    z-index: 2;">Absolute</div> <!--Absolute moves with page but fixed doesn't If u place it above header u must write this code below header div-->
+    <div style="position: fixed;
+                color: aliceblue;
+                background-color: black;
+                left: 0;
+                bottom: 0;
+                padding: 20px;
+                top:20px">
+        Sidebar     <!--Absolute is now relative to the sidebar. If confusions once go through video-->
+        <div style="background-color: rgb(79, 71, 71);
+            width: auto;   
+            color:azure;
+            height: auto;
+            position:absolute;
+            right: 0;
+            top:0;
+            z-index: 2;">
+            X
+        </div>
+    </div> <!--if we cant the fixed div to be sticked to left then left is 0 similar to top is 0 then sticked to top--><!--z index means laers-->
+    <div style="background-color: aqua;
+    width: 400px;   
+    height: 200px;">CSS</div>
+    <div style="background-color: rgb(194, 95, 95);
+        height: 200px;
+        width: 400px;
+        position: relative;">
+        Pstn
+        <div style="
+        position: absolute;
+        background-color: aliceblue;
+        bottom: 2px;
+        right:2px;">
+            Relative - Can time like 14:20
+        </div>
+    </div>   <!--Position:static; is pointless-->
+</body>
+</html>
+<!--We use absolute either inside of relative or fixed like inside a div which is relative or fixed-->
+<!--Suppose u wanna put timer on a video u can use fixed for div of video and inside that div use another div for this timer and make this div absolute-->
+<!--But these div are fixed so we use relative instead of fixed-->
