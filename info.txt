@@ -164,3 +164,5 @@ VIII. Final Project Completion and Review -
 • Comments: Using HTML (<!-- Comment -->) and CSS (/* Comment */) comments to document code.
 • Next Steps: Recommendation to learn JavaScript
 
+* At end Animations ie transform @ animations used ask chatgpt or see Animation.html
+
